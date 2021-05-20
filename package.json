@@ -13,8 +13,6 @@
     "start": "node ./src/index.js"
   },
   "author": "Md. Ibene Anas",
-  "license": "ISC",
-  "engines": {
-    "node": "12.2.1"
-  }
+  "license": "ISC"
+  
 }
