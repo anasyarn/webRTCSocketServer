@@ -8,11 +8,7 @@ const server = http.createServer(app);
 
 const io = require("socket.io")(server, { origins: "*:*" });
 app.use(express.static(__dirname + "/public"));
-app.get("*", (req, res) =>
-  res.status(200).send({
-    message: "Welcome to the socket server of webRTC",
-  })
-);
+
 io.sockets.on("error", (e) => console.log(e));
 server.listen(port, () => console.log(`Server is running on port ${port}`));
 
